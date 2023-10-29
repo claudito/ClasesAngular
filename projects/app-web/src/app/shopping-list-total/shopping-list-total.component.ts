@@ -12,23 +12,23 @@ export class ShoppingListTotalComponent {
   }
 
   subtotal(): number {
-    let total = 0;
+    let subtotal = 0;
     if (this.shopping_cart_list_total.items) {
       for (let item of this.shopping_cart_list_total.items) {
-        total += item.cantidad * item.precio;
+        subtotal += item.cantidad * item.precio;
       }
     }
-    return total;
+    return parseFloat(subtotal.toFixed(2));
   }
 
   impuesto(): number{
      let igv = (this.subtotal() *  this.shopping_cart_list_total.igv ) /100;
-    return  igv;
+     return parseFloat(igv.toFixed(2));
   }
 
   total():number{
       let total = this.subtotal() + this.impuesto();
-      return total;
+      return parseFloat(total.toFixed(2));
   }
 
 

@@ -16,7 +16,7 @@
         <td>{{  values.codigo }}</td>
         <td>{{  values.descripcion }}</td>
         <td class="text-center">{{  values.cantidad }}</td>
-        <td class="text-center">{{  values.precio }}</td>
+        <td class="text-center">{{  values.moneda }} {{  values.precio }}</td>
         <td class="text-center">{{  values.moneda }} {{  values.cantidad *  values.precio  }}</td>
       </tr>
     </tbody>
@@ -26,7 +26,7 @@
           <th></th>
           <th></th>
           <th></th>
-          <th>Total: </th>
+          <th class="text-right">Total: </th>
           <th class="text-center">{{ shopping_cart_list_items.moneda  }} {{ totalItems()  }}</th>
         </tr>
     </tfoot>

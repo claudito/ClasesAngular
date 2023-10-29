@@ -30,7 +30,16 @@ export class ShoppingCartComponent {
         "cantidad": 10,
         "precio": 33.29,
         "moneda": "S/."
+      },
+      {
+        "item": 3,
+        "codigo": "AB0003",
+        "descripcion": "Micrófono PodCast Negro",
+        "cantidad": 20,
+        "precio": 549.2,
+        "moneda": "S/."
       }
+
     ]
   };
 
