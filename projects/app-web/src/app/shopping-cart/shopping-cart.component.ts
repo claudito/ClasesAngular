@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./shopping-cart.component.css']
 })
 export class ShoppingCartComponent {
-  title = "Mi Tienda Virtual";
   shopping_cart = {
+    "title":"Mi Tienda Virtual",
+    "pagina":"Checkout",
+    "delivery":"Si",
+    "direccion":"Calle Loma Umbrosa 000, Surco",
     "igv": 18,
     "moneda": "S/.",
     "metodo_pago": "Tarjeta(Visa)",
