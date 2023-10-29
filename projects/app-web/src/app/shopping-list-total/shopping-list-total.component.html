@@ -2,8 +2,8 @@
   <div class="card-header"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Resumen de la Compra</div>
   <div class="card-body">
     <ul class="list-group">
-      <li class="list-group-item"><i class="fa fa-money" aria-hidden="true"></i> SubTotal: <span class="float-right">S/. {{  subtotal() }}</span></li>
-      <li class="list-group-item"><i class="fa fa-money" aria-hidden="true"></i> IGV({{ shopping_cart_list_total.igv }}%): <span class="float-right">S/. {{  impuesto() }}</span></li>
+      <li class="list-group-item"><i class="fa fa-money" aria-hidden="true"></i> SubTotal: <span class="float-right">S/. {{  subtotal().toFixed(2) }}</span></li>
+      <li class="list-group-item"><i class="fa fa-money" aria-hidden="true"></i> IGV({{ shopping_cart_list_total.igv }}%): <span class="float-right">S/. {{  impuesto().toFixed(2) }}</span></li>
       <li class="list-group-item list-group-item-success"><i class="fa fa-money" aria-hidden="true"></i> Total: <span class="float-right">{{ shopping_cart_list_total.moneda }} {{  total() }}</span></li>
       <li class="list-group-item"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Metódo de Pago: <span class="float-right">{{  shopping_cart_list_total.metodo_pago }}</span></li>
       <li class="list-group-item"><i class="fa fa-bicycle" aria-hidden="true"></i> Delivery: <span class="float-right">{{  shopping_cart_list_total.delivery }}</span></li>

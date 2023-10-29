@@ -26,9 +26,9 @@ export class ShoppingListTotalComponent {
      return parseFloat(igv.toFixed(2));
   }
 
-  total():number{
+  total():string{
       let total = this.subtotal() + this.impuesto();
-      return parseFloat(total.toFixed(2));
+      return total.toFixed(2);
   }
 
 

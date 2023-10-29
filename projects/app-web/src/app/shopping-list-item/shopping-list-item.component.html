@@ -17,7 +17,7 @@
         <td>{{  values.descripcion }}</td>
         <td class="text-center">{{  values.cantidad }}</td>
         <td class="text-center">{{  values.moneda }} {{  values.precio }}</td>
-        <td class="text-center">{{  values.moneda }} {{  values.cantidad *  values.precio  }}</td>
+        <td class="text-center">{{  values.moneda }} {{  totalFila(values)  }}</td>
       </tr>
     </tbody>
     <tfoot>
