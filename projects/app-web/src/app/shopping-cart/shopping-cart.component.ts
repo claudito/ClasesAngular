@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ShoppingCartComponent {
   shopping_cart = {
-    "title":"Mi Tienda Virtual",
+    "title":"Tienda Virtual",
     "pagina":"Checkout",
     "delivery":"Si",
     "direccion":"Calle Loma Umbrosa 000, Surco",
