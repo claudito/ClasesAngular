@@ -7,9 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ShoppingListComponent implements OnInit {
   @Input()  shopping_cart_list:any;
-  test = "test";
+
   ngOnInit() {
-    console.log(this.shopping_cart_list);
+    console.log(  this.shopping_cart_list.items  );
   }
 
 }

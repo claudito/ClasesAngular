@@ -3,9 +3,9 @@
   <div class="card-body">
     <ul class="list-group">
       <li class="list-group-item">SubTotal: <span class="float-right">S/. {{  subtotal() }}</span></li>
-      <li class="list-group-item">IGV({{ shopping_cart_cab.igv }}%): <span class="float-right">S/. {{  impuesto() }}</span></li>
-      <li class="list-group-item">Total: <span class="float-right">S/. {{  total() }}</span></li>
-      <li class="list-group-item">Metódo de Pago: <span class="float-right">{{  shopping_cart_cab.metodo_pago }}</span></li>
+      <li class="list-group-item">IGV({{ shopping_cart_list_total.igv }}%): <span class="float-right">S/. {{  impuesto() }}</span></li>
+      <li class="list-group-item">Total: <span class="float-right">{{ shopping_cart_list_total.moneda }} {{  total() }}</span></li>
+      <li class="list-group-item">Metódo de Pago: <span class="float-right">{{  shopping_cart_list_total.metodo_pago }}</span></li>
     </ul>
   </div>
 </div>

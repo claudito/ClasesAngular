@@ -7,16 +7,14 @@ import { Component,Input } from '@angular/core';
 })
 export class ShoppingListTotalComponent {
   @Input()  shopping_cart_list_total:any;
-  @Input()  shopping_cart_cab:any;
-  test = "test";
   ngOnInit() {
     console.log(this.shopping_cart_list_total);
   }
 
   subtotal(): number {
     let total = 0;
-    if (this.shopping_cart_list_total) {
-      for (let item of this.shopping_cart_list_total) {
+    if (this.shopping_cart_list_total.items) {
+      for (let item of this.shopping_cart_list_total.items) {
         total += item.cantidad * item.precio;
       }
     }
@@ -24,10 +22,9 @@ export class ShoppingListTotalComponent {
   }
 
   impuesto(): number{
-     let igv = (this.subtotal() *  this.shopping_cart_cab.igv ) /100;
+     let igv = (this.subtotal() *  this.shopping_cart_list_total.igv ) /100;
     return  igv;
   }
-
 
   total():number{
       let total = this.subtotal() + this.impuesto();

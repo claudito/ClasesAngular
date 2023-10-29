@@ -11,7 +11,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let values of shopping_cart_list_items">
+      <tr *ngFor="let values of shopping_cart_list_items.items">
         <td class="text-center">{{  values.item }}</td>
         <td>{{  values.codigo }}</td>
         <td>{{  values.descripcion }}</td>
@@ -27,7 +27,7 @@
           <th></th>
           <th></th>
           <th>Total: </th>
-          <th class="text-center">S/. {{ totalItems()  }}</th>
+          <th class="text-center">{{ shopping_cart_list_items.moneda  }} {{ totalItems()  }}</th>
         </tr>
     </tfoot>
   </table>
