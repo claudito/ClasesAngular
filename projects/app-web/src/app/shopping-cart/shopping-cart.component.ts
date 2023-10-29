@@ -38,8 +38,15 @@ export class ShoppingCartComponent {
         "cantidad": 20,
         "precio": 549.2,
         "moneda": "S/."
+      },
+      {
+        "item": 4,
+        "codigo": "AB0004",
+        "descripcion": "Pantalla LCD 23 Pulgadas",
+        "cantidad": 12,
+        "precio": 450,
+        "moneda": "S/."
       }
-
     ]
   };
 

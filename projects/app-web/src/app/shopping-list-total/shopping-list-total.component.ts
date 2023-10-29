@@ -1,5 +1,5 @@
 import { Component,Input } from '@angular/core';
-
+declare const Swal: any;
 @Component({
   selector: 'app-web-shopping-list-total',
   templateUrl: './shopping-list-total.component.html',
@@ -31,5 +31,14 @@ export class ShoppingListTotalComponent {
       return total.toFixed(2);
   }
 
+
+  confirmarPago(){
+    Swal.fire({
+      title: 'Buen Trabajo',
+      text: 'Pago Confirmado',
+      icon: 'success',
+      timer: 5000
+    });
+  }
 
 }
